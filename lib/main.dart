@@ -110,7 +110,7 @@ class _MyAppState extends State<MyApp> {
     ////////// 여기가 제일 중요
     final token =
         "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuaWNrbmFtZSI6IjEyMzQ1IiwiaWF0IjoxNzA4ODY5NDMwLCJleHAiOjE3MDg4ODc0MzB9._83mb9FxErVxRsH46BV5EUe7Nrl7WuydT8akyh1DLyY";
-    var url = Uri.parse('http://10.0.2.2:8080/boards/');
+    var url = Uri.parse('https://server-irxa6nl5aa-uc.a.run.app/boards/');
     http.Response response = await http.get(
       url,
       headers: {
@@ -126,7 +126,7 @@ class _MyAppState extends State<MyApp> {
   Future<void> addMyData(String newtitle, String newcontent, photopath1) async {
     final token =
         "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuaWNrbmFtZSI6IjEyMzQ1IiwiaWF0IjoxNzA4ODY5NDMwLCJleHAiOjE3MDg4ODc0MzB9._83mb9FxErVxRsH46BV5EUe7Nrl7WuydT8akyh1DLyY";
-    var url = Uri.parse('http://10.0.2.2:8080/boards/');
+    var url = Uri.parse('https://server-irxa6nl5aa-uc.a.run.app/boards/');
     Map<String, String> headers = {
       "Content-Type": "application/json; charset=UTF-8",
     };
@@ -167,7 +167,7 @@ class _MyAppState extends State<MyApp> {
     final token =
         "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuaWNrbmFtZSI6IjEyMzQ1IiwiaWF0IjoxNzA4ODY5NDMwLCJleHAiOjE3MDg4ODc0MzB9._83mb9FxErVxRsH46BV5EUe7Nrl7WuydT8akyh1DLyY";
     final boardId = boardIdd;
-    final url = Uri.parse('http://10.0.2.2:8080/boards/$boardId');
+    final url = Uri.parse('https://server-irxa6nl5aa-uc.a.run.app/boards/$boardId');
 
     try {
       final response = await http.delete(
