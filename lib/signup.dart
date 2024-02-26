@@ -36,7 +36,7 @@ class _SignUpState extends State<SignUp> {
       "userLevel": userLevelText.text
     };
     print('before');
-    var url = Uri.parse('http://10.0.2.2:8080/auth/signup');
+    var url = Uri.parse('https://server-irxa6nl5aa-uc.a.run.app/auth/signup');
     try {
       var response = await http.post(
         url,
