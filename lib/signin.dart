@@ -174,7 +174,7 @@ class UserStore extends ChangeNotifier {
   var mygrade;
 
   Future<void> getData_users() async {
-    var url = Uri.parse('http://10.0.2.2:8080/auth/alluser');
+    var url = Uri.parse('https://server-irxa6nl5aa-uc.a.run.app/auth/alluser');
     final response = await http.get(url);
 
     var result2 = json.decode(response.body);
